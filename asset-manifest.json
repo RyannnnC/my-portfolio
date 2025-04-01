@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.5ccf40a6.css",
+    "main.js": "/my-portfolio/static/js/main.e239f606.js",
+    "static/js/453.cba9e5b1.chunk.js": "/my-portfolio/static/js/453.cba9e5b1.chunk.js",
+    "static/media/personalweb.png": "/my-portfolio/static/media/personalweb.7af8331ae8e3c8130fa3.png",
+    "static/media/rarafresh.png": "/my-portfolio/static/media/rarafresh.89c6ce0143a525e84eb7.png",
+    "static/media/bg-light.png": "/my-portfolio/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/bg-dark.png": "/my-portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/avatar.png": "/my-portfolio/static/media/avatar.421384fd43a10ac5e925.png",
+    "static/media/synflo.png": "/my-portfolio/static/media/synflo.ddd263abb4529fd02992.png",
+    "static/media/aicarehealth.png": "/my-portfolio/static/media/aicarehealth.4aa4e3677f24cf350b52.png",
+    "index.html": "/my-portfolio/index.html",
+    "main.5ccf40a6.css.map": "/my-portfolio/static/css/main.5ccf40a6.css.map",
+    "main.e239f606.js.map": "/my-portfolio/static/js/main.e239f606.js.map",
+    "453.cba9e5b1.chunk.js.map": "/my-portfolio/static/js/453.cba9e5b1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ccf40a6.css",
+    "static/js/main.e239f606.js"
+  ]
+}
