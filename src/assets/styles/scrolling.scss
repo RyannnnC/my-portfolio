@@ -1,0 +1,93 @@
+@keyframes scrollingText {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+        content: "Front End Developer"
+    }
+    11% {
+        opacity: 1;
+        -webkit-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+        transform: translateX(50px);
+        content: "Front End Developer"
+    }
+    22% {
+        opacity: 0;
+        -webkit-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        transform: translateX(100px);
+        content: "Front End Developer"
+    }
+    23% {
+        opacity: 0;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+        content: "Full Stack Developer"
+    }
+    34% {
+        opacity: 1;
+        -webkit-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+        transform: translateX(50px);
+        content: "Full Stack Developer"
+    }
+    45% {
+        opacity: 0;
+        -webkit-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        transform: translateX(100px);
+        content: "Full Stack Developer"
+    }
+    46% {
+        opacity: 0;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+        content: "Software Engineer"
+    }
+    57% {
+        opacity: 1;
+        -webkit-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+        transform: translateX(50px);
+        content: "Software Engineer"
+    }
+    68% {
+        opacity: 0;
+        -webkit-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        transform: translateX(100px);
+        content: "Software Engineer"
+    }
+    69% {
+        opacity: 0;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+        content: "Front end developer"
+    }
+    80% {
+        opacity: 1;
+        -webkit-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+        transform: translateX(50px);
+        content: "Front end developer"
+    }
+    91% {
+        opacity: 0;
+        -webkit-transform: translateX(100px);
+        -ms-transform: translateX(100px);
+        transform: translateX(100px);
+        content: "Front end developer"
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+        content: "Front end developer"
+    }
+}
