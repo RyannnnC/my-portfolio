@@ -10,8 +10,9 @@ import {
   AboutMe,
 } from "./components";
 import { SnackbarProvider } from "notistack";
-import FadeIn from './components/FadeIn';
 import './index.scss';
+import Charts from "./components/Charts";
+import LazyLoad from 'react-lazyload';
 
 function App() {
     const [mode, setMode] = useState<string>('light');
@@ -30,16 +31,29 @@ function App() {
 
     return (
         <SnackbarProvider maxSnack={3}>
-             <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
+             <div className={`main-container`}>
                 <Navigation parentToChild={{mode}} modeChange={handleModeChange}/>
-                <FadeIn transitionDuration={700}>
-                    <Main/>
-                    <AboutMe/>
-                    <Expertise/>
-                    <Timeline/>
-                    <Project/>
-                    <Contact/>
-                </FadeIn>
+                <LazyLoad height={700} offset={100}>
+                  <Main />
+                </LazyLoad>
+                <LazyLoad height={700} offset={100}>
+                  <AboutMe />
+                </LazyLoad>
+                <LazyLoad height={700} offset={100}>
+                  <Expertise />
+                </LazyLoad>
+                <LazyLoad height={700} offset={100}>
+                  <Charts />
+                </LazyLoad>
+                <LazyLoad height={700} offset={100}>
+                  <Timeline />
+                </LazyLoad>
+                <LazyLoad height={700} offset={100}>
+                  <Project />
+                </LazyLoad>
+                <LazyLoad height={700} offset={100}>
+                  <Contact />
+                </LazyLoad>
                 <Footer />
             </div>
         </SnackbarProvider>

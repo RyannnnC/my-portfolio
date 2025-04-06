@@ -1,7 +1,15 @@
-import React from 'react';
+import { Fade } from '@mui/material';
+import React, { useEffect } from 'react';
 
 function AboutMe() {
+    const [fadeIn, setFadeIn] = React.useState(false);
+
+    useEffect(() => {
+        setFadeIn(true);
+    }, []);
+
     return (
+        <Fade in={fadeIn} timeout={2500}>
         <div className="container">
             <div className="items-container">
                 <h1>About Me</h1>
@@ -16,6 +24,7 @@ function AboutMe() {
                 </p>
             </div>
         </div>
+        </Fade>
     );
 };
 

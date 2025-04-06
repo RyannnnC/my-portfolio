@@ -69,6 +69,6 @@ export const projectList: Record<string, ProjectItem> = {
         name: 'Personal Website',
         description: 'Creative portfolio with animated elements and some funny HTML5 games.',
         image: personalweb,
-        url: 'http://localhost:3001/',
+        url: 'http://localhost:7001/',
     }
 }

@@ -1,7 +1,7 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import '../assets/styles/Contact.scss';
 import emailjs from '@emailjs/browser';
-import { TextField, Button, Grid, Divider } from '@mui/material';
+import { TextField, Button, Grid, Divider, Fade } from '@mui/material';
 import SendIcon from '@mui/icons-material/Send';
 import { openSnackbar } from '../tools/Snackbar';
 import { contactList } from '../constants/Constants';
@@ -16,6 +16,11 @@ function Contact() {
   const [emailError, setEmailError] = useState<boolean>(false);
   const [messageError, setMessageError] = useState<boolean>(false);
 
+  const [fadeIn, setFadeIn] = React.useState(false);
+      
+  useEffect(() => {
+      setFadeIn(true);
+  }, []);
 
   const sendEmail = (e: any) => {
     e.preventDefault();
@@ -49,7 +54,8 @@ function Contact() {
   };
 
   return (
-    <div>
+    <Fade in={fadeIn} timeout={2500}>
+    <div className='contact'>
       <div className="items-container">
         <div className="contact_wrapper">
           <h1>Contact Me</h1>
@@ -140,6 +146,7 @@ function Contact() {
         </div>
       </div>
     </div>
+    </Fade>
   );
 }
 

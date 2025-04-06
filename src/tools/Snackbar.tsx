@@ -3,7 +3,7 @@ import { enqueueSnackbar } from "notistack";
 export function openSnackbar(
   message: string,
   variant: "default" | "error" | "success" | "warning" | "info",
-  autoHideDuration: number = 3000
+  autoHideDuration: number = 7000
 ) {
   return enqueueSnackbar(message, {
     variant,

@@ -5,9 +5,11 @@ import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import '../assets/styles/Timeline.scss'
+import { Fade } from "@mui/material";
 
 function Timeline() {
   return (
+    <Fade in={true} timeout={2500} appear={true}>
     <div id="history">
       <div className="items-container">
         <h1>Career History</h1>
@@ -89,6 +91,7 @@ function Timeline() {
         </VerticalTimeline>
       </div>
     </div>
+    </Fade>
   );
 }
 

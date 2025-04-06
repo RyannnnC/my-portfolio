@@ -10,6 +10,9 @@ function Footer() {
       <div>
         <a href={GithubUrl} target="_blank" rel="noreferrer"><GitHubIcon/></a>
         <a href={LinkedInUrl} target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+        <p>
+          @ Copyright Ryan Cai 2025, All rights reserved.
+        </p>
       </div>
     </footer>
   );

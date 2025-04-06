@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import '../assets/styles/Project.scss';
 import { projectList } from '../constants/Constants';
+import { Fade } from "@mui/material";
 
 export interface ProjectItem {
     name: string;
@@ -10,7 +11,15 @@ export interface ProjectItem {
 }
 
 function Project() {
+
+    const [fadeIn, setFadeIn] = React.useState(false);
+        
+    useEffect(() => {
+        setFadeIn(true);
+    }, []);
+
     return(
+        <Fade in={fadeIn} timeout={2500}>
     <div className="projects-container" id="projects">
         <h1>Personal Projects</h1>
         <div className="projects-grid">
@@ -27,6 +36,7 @@ function Project() {
             ))}
         </div>
     </div>
+        </Fade>
     );
 }
 

@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
-import { Chip} from '@mui/material';
+import { Chip, Fade} from '@mui/material';
 import '../assets/styles/Expertise.scss';
+import Charts from "./Charts";
 
 const labelsFirst = [
     "React",
@@ -40,7 +41,15 @@ const labelsThird = [
 ];
 
 function Expertise() {
+    const [fadeIn, setFadeIn] = React.useState(false);
+    
+    useEffect(() => {
+        setFadeIn(true);
+    }, []);
+    
+
     return (
+        <Fade in={fadeIn} timeout={2500}>
     <div className="container" id="expertise">
         <div className="skills-container">
             <h1>Expertise</h1>
@@ -83,6 +92,7 @@ function Expertise() {
             </div>
         </div>
     </div>
+    </Fade>
     );
 }
 
