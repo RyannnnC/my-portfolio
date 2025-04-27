@@ -37,9 +37,6 @@ function App() {
                   <Main />
                 </LazyLoad>
                 <LazyLoad height={700} offset={100}>
-                  <AboutMe />
-                </LazyLoad>
-                <LazyLoad height={700} offset={100}>
                   <Expertise />
                 </LazyLoad>
                 <LazyLoad height={700} offset={100}>

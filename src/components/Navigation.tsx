@@ -53,7 +53,7 @@ function Navigation({parentToChild, modeChange}: any) {
       expertiseElement.scrollIntoView({ behavior: 'smooth' });
       console.log('Scrolling to:', expertiseElement);  // Debugging: Ensure the element is found
     } else {
-      console.error('Element with id "expertise" not found');  // Debugging: Log error if element is not found
+      console.error('Element not found', section);  // Debugging: Log error if element is not found
     }
   };
 

@@ -55,7 +55,7 @@ function Contact() {
 
   return (
     <Fade in={fadeIn} timeout={2500}>
-    <div className='contact'>
+    <div className='contact' id='contact'>
       <div className="items-container">
         <div className="contact_wrapper">
           <h1>Contact Me</h1>

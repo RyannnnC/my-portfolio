@@ -1,3 +1,8 @@
+.timeline-container {
+    background-color: #f7f7f7;
+}
+
+
 .vertical-timeline span {
     color: white;
     font-family: 'Courier Prime', monospace;
@@ -24,7 +29,7 @@
 }
 
 .vertical-timeline-element .vertical-timeline-element-date {
-    color: white;
+    color: rgb(39, 40, 34);
 }
 
 .svg-inline--fa {

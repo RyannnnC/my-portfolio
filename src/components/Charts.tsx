@@ -8,6 +8,10 @@ const dataset = [
         value: 100,
     },
     {
+        language: 'TypeScript',
+        value: 95,
+    },
+    {
         language: 'HTML',
         value: 95,
     },
@@ -30,22 +34,18 @@ const dataset = [
     {
         language: 'Java',
         value: 70,
-    }
+    },
+
 ]
 
 
 function Charts() {
-    const [fadeIn, setFadeIn] = React.useState(false);
-        
-    useEffect(() => {
-        setFadeIn(true);
-    }, []);
-
+    
     return (
         <Fade in={true} timeout={2500}>
         <div className="container">
             <div className='charts-container'>
-                <h1>Charts</h1>
+                <h1>Skills</h1>
                 <Grid container spacing={2} p={2} mt={2} mb={4} columns={{xs:4, sm:8, md:12}}>
                 {dataset.map((data, index) => {
                     return (
@@ -59,11 +59,14 @@ function Charts() {
                                         variant='buffer' 
                                         value={data.value} 
                                         sx={{
+                                            color: '#92f1f1',
+                                            backgroundColor: '#92f1f1',
                                             height: 20,
                                             borderRadius: 10,
                                             '--final-width': `${data.value}%`,
                                             // 覆盖内部进度条样式，使用 translateX 动画
                                             '& .MuiLinearProgress-bar': {
+                                              color: '#92f1f1',
                                               transform: `translateX(${data.value}%)`,
                                               transformOrigin: 'left',
                                               animation: `slideIn 3000ms ease forwards`,

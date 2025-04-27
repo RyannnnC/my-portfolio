@@ -5,25 +5,30 @@
 .about-section {
     display: flex;
     gap: 30px;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
-    padding: 0px 15%;
-    min-height: 700px;
-    background-image: url("../images/bg-dark.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    min-height: 600px;
+}
+
+.main {
+    background: linear-gradient(
+        to right,
+        #92f1f1 0%,     // 从左边缘开始到 40% 都是蓝色
+        #92f1f1 40%,    // 蓝色持续到 40%
+        white 40%,   // 从 40% 开始变为黑色
+        white 100%   // 黑色持续到右侧边缘
+    );
 }
 
 .about-section .content {
     text-align: left;
     z-index: 2;
-
+    
     .social_icons {
         display: flex;
         flex-direction: row;
+        justify-content: end;
         gap: 10px;
         color: white;
 
@@ -53,7 +58,6 @@
     z-index: 2;
     img {
         width: 150px;
-        border-radius: 50%;
     }
 }
 
